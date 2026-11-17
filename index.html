@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archisa Arora</title>
+<meta name="description" content="Archisa Arora, software engineer. Projects you can run in the browser, experience and resume.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to projects</a>
+<canvas class="petals" id="petals" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="nav-name" href="#top">Archisa Arora</a>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#path">Path</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+  </nav>
+</header>
+
+<main id="view-home">
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-text">
+      <h1 id="hero-name"></h1>
+      <p class="hero-tag" id="hero-tag"></p>
+      <ul class="hero-facts" id="hero-facts"></ul>
+      <p class="hero-links" id="hero-links"></p>
+    </div>
+    <div class="hero-tree">
+      <div id="tree"></div>
+    </div>
+  </section>
+
+  <section class="highlights" aria-label="Highlights"><div class="hl-grid" id="highlights"></div></section>
+
+  <section class="band" id="work" aria-labelledby="work-h">
+    <div class="band-head">
+      <h2 id="work-h">Work you can run</h2>
+      <p>Five projects, all live on this page. Pick one and play with it.</p>
+    </div>
+    <div class="deck-tabs" id="deck-tabs" role="tablist" aria-label="Projects"></div>
+    <div class="deck-stage" id="deck-stage"></div>
+    <div class="deck-foot">
+      <button class="deck-step" id="deck-prev" type="button"></button>
+      <span id="deck-count"></span>
+      <button class="deck-step" id="deck-next" type="button"></button>
+    </div>
+  </section>
+
+  <section class="band band-tint" id="path" aria-labelledby="path-h">
+    <div class="band-head">
+      <h2 id="path-h">The path so far</h2>
+    </div>
+    <div id="path-groups"></div>
+  </section>
+
+  <section class="band" id="skills" aria-labelledby="skills-h">
+    <div class="band-head">
+      <h2 id="skills-h">Skills</h2>
+    </div>
+    <div class="skill-grid" id="skill-grid"></div>
+  </section>
+
+  <footer class="foot" id="contact">
+    <h2>Get in touch</h2>
+    <p class="foot-links" id="foot-links"></p>
+  </footer>
+</main>
+
+<div class="dial" id="dial">
+  <nav class="dial-menu" id="dial-menu" aria-label="Jump to" hidden></nav>
+  <button class="dial-btn" id="dial-btn" type="button" aria-expanded="false" aria-controls="dial-menu" aria-label="Jump to a section">
+    <svg viewBox="-14 -14 28 28" aria-hidden="true"><g id="dial-flower"></g><circle r="2.6"/></svg>
+  </button>
+</div>
+
+<main id="view-resume" hidden>
+  <article class="resume" id="resume-body"></article>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/demos/swipemeet.js"></script>
+<script src="js/demos/securesafe.js"></script>
+<script src="js/demos/cotraveler.js"></script>
+<script src="js/demos/telemetry.js"></script>
+<script src="js/lib/nn.js"></script>
+<script src="js/demos/digidetect.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

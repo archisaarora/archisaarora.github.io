@@ -1,2 +1,1 @@
-# Archisa Arora — portfolio
-
+# Archisa Arora's portfolio: archisaarora.github.io
